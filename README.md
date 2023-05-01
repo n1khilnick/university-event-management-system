@@ -10,7 +10,7 @@
 
 ## Data Flow
 
-### 1. Student
+### 1. Models
 
 #### 1.1 Students Entity:
 * Created `Students` entity class along with data studentId, firstName, lastName, location, age, enum department and added validations on them.
@@ -24,7 +24,7 @@
 
 
 
-### 2. Controller:
+### 2. Controllers:
 
 #### 2.1 Student Controller
 * Created `StudentsController` class in which used the annotations like **@RestController** to annotate the class as Controller.
@@ -99,7 +99,7 @@
 ```
 
 
-### 3. Service:
+### 3. Services:
 
 #### 3.1 Student Service 
 * Created `StudentService` class in which provide some business functionalities of every handler methods.
@@ -112,7 +112,7 @@
 * Used @Transactional annotation to separate transaction management code from the code for business logic.
 
 
-### 4. Repository:
+### 4. Repositories:
 
 #### 4.1 Student's Repository
 * Created `StudentDao` interface class that extends CrudRepository which is interface for generic inbuilt CRUD operations on a repository for a specific type. Usually represent the database access layer in an application.
