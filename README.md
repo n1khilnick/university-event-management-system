@@ -31,7 +31,7 @@
 * Used annotation @GetMapping , @PostMapping , @PutMapping , @DeleteMapping to map the HTTP web requests to the specific handler methods.
 * Used @Valid annotations to trigger validations while inserting data.
 
-#### 2.2 Event Entity
+#### 2.2 Event Controller
 * Created `EventController` class in which used the annotations like **@RestController** to annotate the class as Controller.
 * Used annotation @GetMapping , @PostMapping , @PutMapping , @DeleteMapping to map the HTTP web requests to the specific handler methods.
 * Used @Valid annotations to trigger validations while inserting data.
@@ -101,12 +101,12 @@
 
 ### 3. Service:
 
-#### 3.1 Student's
+#### 3.1 Student Service 
 * Created `StudentService` class in which provide some business functionalities of every handler methods.
 * Used **@Service** annotation to indicate that a class belongs to the service layer.
 * Used @Transactional annotation to separate transaction management code from the code for business logic.
   
-#### 3.2 Events's
+#### 3.2 Events Service
 * Created `EventService` class in which provide some business functionalities of every handler methods.
 * Used **@Service** annotation to indicate that a class belongs to the service layer.
 * Used @Transactional annotation to separate transaction management code from the code for business logic.
@@ -114,13 +114,13 @@
 
 ### 4. Repository:
 
-#### 4.1 Student's
+#### 4.1 Student's Repository
 * Created `StudentDao` interface class that extends CrudRepository which is interface for generic inbuilt CRUD operations on a repository for a specific type. Usually represent the database access layer in an application.
 * Used `Iterable<Students>` to manage the data of Users by performing CRUD operations.
 * Used **@Repository** annotation is used to indicate that the class provides the mechanism for storage, retrieval, search, update and delete operation on objects.
 * Used @Modifying annotation wrote named parameters query using @Query annotation to insert, update, or delete an entity.
 
-#### 4.2 Event's
+#### 4.2 Event's Repository
 * Created `EventDao` interface class that extends CrudRepository which is interface for generic inbuilt CRUD operations on a repository for a specific type. Usually represent the database access layer in an application.
 * Used `Iterable <Events>` to manage the data of Users by performing CRUD operations.
 * Used **@Repository** annotation is used to indicate that the class provides the mechanism for storage, retrieval, search, update and delete operation on objects.
